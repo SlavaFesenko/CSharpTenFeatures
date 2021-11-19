@@ -1,23 +1,5 @@
 ﻿namespace CSharpTenFeatures.StructChanges;
 
-internal static class StructureExamples
-{
-    internal static void StructureExamplesMain()
-    {
-        DemoKeywordWithForStructure();
-    }
-
-    private static void DemoKeywordWithForStructure()
-    {
-        User myUser = new("Chris", 21);
-
-        // теперь with доступен также для структур, как был в 9 для рекордов
-        User otherUser = myUser with { Name = "David" };
-
-        Console.WriteLine("otherUser.Name: " + otherUser.Name); // David
-    }
-}
-
 public struct User
 {
     // для полей и свойств структуры с С#10 можно добавлять инициализаторы
@@ -38,3 +20,20 @@ public struct User
     }
 }
 
+internal static class StructureExamples
+{
+    internal static void StructureExamplesMain()
+    {
+        Demo_KeywordWith_ForStructure();
+    }
+
+    private static void Demo_KeywordWith_ForStructure()
+    {
+        User myUser = new("Chris", 21);
+
+        // теперь with доступен также для структур, как был в 9 для рекордов
+        User otherUser = myUser with { Name = "David" };
+
+        Console.WriteLine("otherUser.Name: " + otherUser.Name); // David
+    }
+}
