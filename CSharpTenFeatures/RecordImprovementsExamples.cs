@@ -1,4 +1,4 @@
-﻿namespace CSharpTenFeatures.RecordsChanges;
+﻿namespace CSharpTenFeatures;
 
 #region record CLASS
 

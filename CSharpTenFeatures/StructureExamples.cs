@@ -1,4 +1,4 @@
-﻿namespace CSharpTenFeatures.StructChanges;
+﻿namespace CSharpTenFeatures;
 
 public struct User
 {
